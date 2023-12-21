@@ -8,7 +8,6 @@ const ThemeProvider = ({children}) => {
 
     return (
         <div className={theme}>
-            {theme}
             {children}
         </div>
     )
