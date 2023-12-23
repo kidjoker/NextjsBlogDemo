@@ -3,8 +3,13 @@
     margin-top: 30px;
 }
 
+.bold {
+    font-style: bold;
+}
+
 .title {
-    font-size: 96px;
+    font-size: 72px;
+    font-weight: 300;
 }
 
 .post {
@@ -20,6 +25,62 @@
     position: relative;
 }
 
+.image {
+    object-fit: cover;
+}
+
 .textContainer {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.postTitle {
+    font-size: 40px;
+}
+
+.postDesc {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--softTextColor);
+}
+
+.button {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+}
+
+@media screen and (max-width:1280px) {
+    .title {
+        font-size: 58px;;
+    }
+
+    .postTitle {
+        font-size: 42px;
+    }
+
+    .postDesc {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .title {
+        font-size: 42px;;
+    }
+
+    .postTitle {
+        font-size: 28px;
+    }
+
+    .postDesc {
+        font-size: 16px;
+    }
+
+    .imgContainer {
+        display: none;
+    }
 }

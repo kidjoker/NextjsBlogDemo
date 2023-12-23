@@ -1,3 +1,11 @@
 .container {
-    background-color: var(--bg);
+    flex: 5;
+}
+
+.title {
+    margin: 50px 0px;
+}
+
+.image {
+    object-fit: cover;
 }
