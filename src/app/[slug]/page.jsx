@@ -1,6 +1,7 @@
 import styles from './singlePage.module.css'
 import Menu from '../components/menu/Menu'
 import Image from 'next/image'
+import Commemnts from '../components/comments/Comments'
 
 const page = () => {
   return (
@@ -31,6 +32,12 @@ const page = () => {
                         laudantium repellat ducimus unde aspernatur fuga. Quo, accusantium
                         quisquam! Harum unde sit culpa debitis
                     </p>
+                    <h2>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Cupiditate, quam nisi magni ea laborum inventore voluptatum
+                        laudantium repellat ducimus unde aspernatur fuga. Quo, accusantium
+                        quisquam! Harum unde sit culpa debitis
+                    </h2>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                         Cupiditate, quam nisi magni ea laborum inventore voluptatum
@@ -43,12 +50,9 @@ const page = () => {
                         laudantium repellat ducimus unde aspernatur fuga. Quo, accusantium
                         quisquam! Harum unde sit culpa debitis
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Cupiditate, quam nisi magni ea laborum inventore voluptatum
-                        laudantium repellat ducimus unde aspernatur fuga. Quo, accusantium
-                        quisquam! Harum unde sit culpa debitis
-                    </p>
+                </div>
+                <div className={styles.comment}>
+                    <Commemnts />
                 </div>
             </div>
             <Menu />

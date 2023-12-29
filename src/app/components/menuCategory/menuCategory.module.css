@@ -1,29 +1,33 @@
-  .categoryItem {
-    padding: 10px 25px;
-    border-radius: 10px;
-    font-size: 14px;
-}  
+.categoryItem {
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .travel {
-    background-color: #ff7857;
+  background-color: #ff7857;
 }
 
 .culture {
-    background-color: #ffb14f;
+  background-color: #ffb14f;
 }
 
 .food {
-    background-color: #7fb881;
+  background-color: #7fb881;
 }
 
 .fashion {
-    background-color: #ff7887;
+  background-color: #ff7887;
 }
 
 .coding {
-    background-color: #775aec;
+  background-color: #775aec;
 }
 
 .style {
-    background-color: #789cff;
+  background-color: #789cff;
 }

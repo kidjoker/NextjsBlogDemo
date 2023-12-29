@@ -1,85 +1,85 @@
 .container {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .bold {
-    font-style: bold;
+  font-style: bold;
 }
 
 .title {
-    font-size: 72px;
-    font-weight: 300;
+  font-size: 72px;
+  font-weight: 300;
 }
 
 .post {
-    margin-top: 60px;
-    display: flex;
-    align-items: center;
-    gap: 50px;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .imgContainer {
-    flex: 1;
-    height: 500px;
-    position: relative;
+  flex: 1;
+  height: 500px;
+  position: relative;
 }
 
 .image {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .textContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .postTitle {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .postDesc {
-    font-size: 20px;
-    font-weight: 300;
-    color: var(--softTextColor);
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--softTextColor);
 }
 
 .button {
-    padding: 16px 20px;
-    border: none;
-    border-radius: 5px;
-    width: max-content;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
 }
 
-@media screen and (max-width:1280px) {
-    .title {
-        font-size: 58px;;
-    }
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 58px;
+  }
 
-    .postTitle {
-        font-size: 42px;
-    }
+  .postTitle {
+    font-size: 42px;
+  }
 
-    .postDesc {
-        font-size: 18px;
-    }
+  .postDesc {
+    font-size: 18px;
+  }
 }
 
-@media screen and (max-width:1024px) {
-    .title {
-        font-size: 42px;;
-    }
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 42px;
+  }
 
-    .postTitle {
-        font-size: 28px;
-    }
+  .postTitle {
+    font-size: 28px;
+  }
 
-    .postDesc {
-        font-size: 16px;
-    }
+  .postDesc {
+    font-size: 16px;
+  }
 
-    .imgContainer {
-        display: none;
-    }
+  .imgContainer {
+    display: none;
+  }
 }
