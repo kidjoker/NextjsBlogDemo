@@ -1,7 +1,7 @@
 import styles from "./menu.module.css";
 import Link from "next/link";
-import MenuPosts from "@/app/components/menuPosts/menuPosts";
-import MenuCategory from "@/app/components/menuCategory/MenuCategory";
+import MenuPosts from "@/components/menuPosts/menuPosts";
+import MenuCategory from "@/components/menuCategory/MenuCategory";
 
 const Menu = () => {
   return (
