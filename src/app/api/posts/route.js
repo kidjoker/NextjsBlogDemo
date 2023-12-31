@@ -1,5 +1,6 @@
 import prisma from "@/utils/connect";
 import { NextResponse } from "next/server";
+import { getAuthSession } from "@/utils/auth";
 
 export const GET = async (req) => {
   const POST_PER_PAGE = parseInt(process.env.POST_PER_PAGE);
@@ -21,6 +22,34 @@ export const GET = async (req) => {
     ]);
 
     return new NextResponse(JSON.stringify({ posts, count }), { status: 200 });
+  } catch (error) {
+    console.log(error);
+    return new NextResponse(
+      JSON.stringify({ message: "something went wrong" }, { status: 500 })
+    );
+  }
+};
+
+//create a post
+export const POST = async (req) => {
+  const session = await getAuthSession();
+  
+  if (!session) {
+    return new NextResponse(
+      JSON.stringify({ message: "Unauthorized" }, { status: 401 })
+    );
+  }
+
+  try {
+    const body = await req.json();
+    const post = await prisma.post.create({
+      data: {
+        ...body,
+        userEmail: session.user.email,
+      },
+    });
+
+    return new NextResponse(JSON.stringify(post, { status: 200 }));
   } catch (error) {
     console.log(error);
     return new NextResponse(
